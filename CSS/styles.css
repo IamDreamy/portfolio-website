@@ -1,0 +1,386 @@
+/*
+Colors to use
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+
+*/
+
+/* Variables for defining many pieces with the same color tone
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+}
+
+a {
+  color: var(--primary-color);
+}
+*/
+
+:root {
+  --padding10: 10px;
+  --colorG: #357b70;
+  --colorW: #fff;
+  --colorB: #000;
+  --text-decorationN: none;
+  --borderN: none;
+  --border-radius3: 3px;
+  --border-bottom2S: 2px solid rgba(0, 0, 0, 0.3);
+  --cursorP: pointer;
+  --opacity8: 0.8;
+  --background-colorLG: lightgray;
+  --dispalyF: flex;
+  --displayIB: inline-block;
+  --max-width750: 750px;
+}
+
+div {
+  padding: var(--padding10);
+  margin: 10px;
+  border: 2px solid white;
+}
+
+body {
+  background-color: var(--background-colorLG);
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+a {
+  color: var(--colorG);
+}
+
+a:visited {
+  color: #05676e;
+}
+
+a:hover {
+  text-decoration: var(--text-decorationN);
+  /*
+    No underlinf text when hovering over a link
+  */
+}
+
+a:active {
+  color: #489c79;
+}
+
+button {
+  /*overwrites browser default and resets the border */
+  border: var(--borderN);
+  /*takes the font from the outer container*/
+  font-family: inherit;
+  /*styles background,color,and text-decoration(underline)*/
+  background-color: #357b70;
+  color: var(--colorW);
+  text-decoration: var(--text-decorationN);
+  /*adds spacing to button*/
+  padding: var(--padding10);
+  border-radius: var(--border-radius3);
+  /*gives button a bottom border of width 2px, type solid, and
+  color in RGBA format*/
+  border-bottom: var(--border-bottom2S);
+}
+
+button:hover, button:focus {
+  cursor: var(--cursorP);
+  opacity: var(--opacity8);
+}
+
+.button_secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: var(--displayIB);
+  margin-left: 15px;
+}
+
+.navigation-list-item--active {
+  text-decoration: var(--text-decorationN);
+}
+
+/* Could write the above text as / No more then three levels
+
+.navigation-list {
+  list-style-type: none;
+
+    li {
+    display: inline-block;
+    margin-left: 15px;
+
+    .navigation-list__item--active {
+      text-decoration: none;
+    }
+  }
+}
+*/
+
+.header_title {
+  margin: 0 auto;
+}
+
+.profile_portrait {
+  float: left;
+  width: 170px;
+  margin-right: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: var(--dispalyF);
+  /* flex-direction places outside text on particular point around social media links*/
+  flex-direction: column-reverse;
+  /*text-align: center;*/
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: var(--dispalyF);
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header-item {
+  flex: 0 1 200px;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  opacity: var(--opacity8);
+}
+
+.page-header-item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/*Grid Fallback */
+
+.grid-item {
+  display: var(--displayIB);
+  width: 33%;
+}
+
+.portfolio-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* When making grids, "colums" needed to be specified but "rows" will auto grow*/
+  grid-gap: 20px
+  /* When browser is being changed then grid-gap will keep it alighned with the page*/
+}
+
+.grid-item {
+  background-color: var(--background-colorLG);
+  padding: var(--padding10);
+  /* add-on to grid-fallback to ensure layout works with older browsers*/
+  width: auto;
+}
+
+.grid-item:last-child {
+  /* Makes grid item go in whatever order you may want, in this case makes
+  one grid take up 2 spaces*/
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+  /*Can specify end or start by adding such to end of column or row "grid-column-row" */
+}
+
+/* Other values for "all" can be screen, print, and speech */
+
+@media all and (max-width: 500px) {
+  .portfolio-work {
+    grid-template-columns: 1fr;
+    /* changes 3-column grid to 1-column when below 500px by passing 1fr */
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+  .portfolio-work {
+    grid-template-columns: 1fr 1fr;
+    /* by adding another 1fr, the screen willshow 2 columns when between 501px and 750px */
+  }
+}
+
+@media all and (max-width: 750px) {
+  .portfolio-work {
+    grid-gap: 10px;
+  }
+  .grid-item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.button, button {
+  border: var(--borderN);
+  /* Overwrites browser defaults and resets the border */
+  display: var(--displayIB);
+  font-family: inherit;
+  /* takes the font from the outer container */
+  /* Everything below styles the button */
+  background-color: #4688ec;
+  color: var(--colorW);
+  text-decoration: var(--text-decorationN);
+  padding: var(--padding10);
+  border-radius: var(--border-radius3);
+  border-bottom: var(--border-bottom2S);
+  transition: 0.9s opacity;
+}
+
+/* Add for older browsers to be able to see transitions or use postprocessors
+-webkit-transition: 0.0s opacity;
+   -o-transition: 0.0s opacity; */
+
+button:hover, button:focus, .button:hover, .button:focus {
+  cursor: var(--cursorP);
+  opacity: var(--opacity8);
+}
+
+/* This would allow button to inherit particular attributes to avoid
+copying the same attribute for each individual button.
+%button-shared {
+  border: none;
+  display: inline-block;
+
+  .button {
+  @extend %button-shared;
+  background-color: $primary-color;
+}
+*/
+
+/*  Keeps all text centered for now */
+
+* {
+  text-align: center;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+/*.sun {
+  animation-duration: 4s;
+  /* How long the animation takes to complete entire transition
+  animation-name: color-change;
+  /* Specifies the name of the animation(@keyframes) 
+  animation-iteration-count: infinite;
+  /* How many times the animation will repeat 
+  animation-direction: alternate;
+  /* Specifies the direction of the animation(reverse/regualar)
+  animation-timing-function: linear;
+  /* Specifies the speedcurve or transition in(ease,ease-in) */
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/*tranform-orgin can change orgin position of an svg animation */
+
+@keyframes cloud-move {
+  from {
+    /*values of zero dont need px*/
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* extra */
+
+/*$background-color-dblue: #112055;
+$color-white: #fff;
+$background-color-lgreen: #4f9d92;
+$color-black: #000;
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.box-primary {
+  background-color: $background-color-dblue;
+  color: $color-white;
+}
+
+.box-secondary {
+  @extend %box-shared;
+  background-color: $background-color-lgreen;
+  color: $color-black;
+}
+
+.box-primary {
+  .box-primary-lighter {
+    @extend %box-shared;
+  }
+  .box-primary-darker {
+    @extend %box-shared;
+  }
+}
+
+%box-shared :hover {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.3);
+}
+*/
