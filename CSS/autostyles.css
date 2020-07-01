@@ -348,6 +348,7 @@ copying the same attribute for each individual button.
     }
 }
 
+/*
 @keyframes color-change {
     0% {
         fill: #edc655;
@@ -359,6 +360,7 @@ copying the same attribute for each individual button.
         fill: #f76414;
     }
 }
+*/
 
 /*.sun {
   animation-duration: 4s;
