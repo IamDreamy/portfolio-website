@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <header class="page-header">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- meta name viewpoint helps website look more in-tuned with phone screens-->
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>Miles Hammock - Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,41 +15,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/autostyles.css" />
-    <!--The above text  not only gives the font "Korona" but allows CSS to be implemented-->
-    <div>
-      <img src="IMG/logo.jpg" alt="Logo" class="page-header-item" />
-    </div>
-  </header>
-    <nav class="main-navigation page-header-item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list-item">
-            Home
-          </a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list-item"
-            >About Me
-          </a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list-item">
-            Contact
-          </a>
-        </li>
-        <li role="presentation">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation-list-item--active"
-          >
-            Work
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </nav>
+  </head>
   <body>
+    <header>
+      <img src="IMG/logo.jpg" alt="Logo" class="profile" />
+      <nav class="page-header-item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list-item">
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list-item"
+              >About Me
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list-item">
+              Contact
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list-item--active"
+            >
+              Work
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section>
       <h1>My Cool Websites</h1>
       <div class="portfolio-work">
@@ -91,17 +88,25 @@
         </div>
       </div>
     </section>
+    <!-- Footer with linka to social media profiles-->
+    <footer class="page-footer">
+      <p>"You can find me on all of these networks as well"</p>
+      <div class="social-media">
+        <img src="img/gmail-logo.png" class="footer-wh" alt="My Gmail" />
+        <img
+          src="img/skypelogo.png"
+          class="footer-wh"
+          alt="My Personal
+          Skype"
+        />
+        <img
+          src="img/youtubelogo.png"
+          class="footer-wh"
+          alt="Best
+          Youtube Experience"
+        />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
   </body>
-  <!-- Footer with linka to social media profiles-->
-  <footer class="page-footer">
-    <p>
-      Find Me On!
-    </p>
-    <div class="social-media">
-      <img src="IMG/gmail-logo.png" width="80px" height="80px" alt="Gmail" />
-      <img src="IMG/skypelogo.png" width="80px" height="80px" alt="Skype" />
-      <img src="IMG/youtubelogo.png" width="80px" height="80px" alt="Youtube" />
-    </div>
-  </footer>
-  <script src="js/tota11y.min.js"></script>
 </html>

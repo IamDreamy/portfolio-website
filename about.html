@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <header class="page-header">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>Miles Hammock - Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -15,46 +15,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/autostyles.css" />
-    <title>
-      <!--I can write whatever I want in this and it will not show up in browser
-      ;) -->
-    </title>
-    <div class="profile">
-      <!-- Add your logo here -->
-      <img src="IMG/logo.jpg" alt="Logo" />
-    </div>
-  </header>
-  <nav class="profile">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-        <a href="index.html" role="menuitem" class="naviation-list_item"
-          >Homepage</a
-        >
-      </li>
-      <li role="presentation">
-        <a
-          href="about.html"
-          role="menuitem"
-          class="navigation-list_item--active"
-          >About Me</a
-        >
-      </li>
-      <li role="presentation">
-        <a
-          href="contact.html"
-          target="_blank"
-          role="menuitem"
-          class="naviation-list_item"
-          >Contact Us</a
-        >
-        <!-- Using "target="_blank takes users to selected page on different tab-->
-      </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="naviation-list_item">Work</a>
-      </li>
-    </ul>
-  </nav>
+  </head>
   <body>
+    <header>
+      <img src="IMG/logo.jpg" alt="Logo" class="profile" />
+      <nav class="page-header-item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="naviation-list_item"
+              >Homepage</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list_item--active"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              target="_blank"
+              role="menuitem"
+              class="naviation-list_item"
+              >Contact Us</a
+            >
+            <!-- Using "target="_blank takes users to selected page on different tab-->
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="naviation-list_item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="profile">
       <h1>This section is a little about me</h1>
       <p>While studying coding I hope to attain one of the following titles</p>
@@ -2143,8 +2140,7 @@
       <p>Build, Build, Build...</p>
       <img
         src="https://th.bing.com/th/id/OIP.MHYrb45SEfQ-wymE9H_o-wHaG1?w=204&h=188&c=7&o=5&pid=1.7"
-        width="40px"
-        height="40px"
+        class="footer-wh40"
         alt=""
       />
     </div>
@@ -2169,23 +2165,24 @@
         </tr>
       </tbody>
     </table>
+    <footer class="page-footer">
+      <p>"You can find me on all of these networks as well"</p>
+      <div class="social-media">
+        <img src="img/gmail-logo.png" class="footer-wh" alt="My Gmail" />
+        <img
+          src="img/skypelogo.png"
+          class="footer-wh"
+          alt="My Personal
+          Skype"
+        />
+        <img
+          src="img/youtubelogo.png"
+          class="footer-wh"
+          alt="Best
+          Youtube Experience"
+        />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
   </body>
-
-  <footer class="profile">
-    <p>"You can find me on all of these networks as well"</p>
-    <img src="img/gmail-logo.png" width="80px" height="80px" alt="My Gmail" />
-    <img
-      src="img/skypelogo.png"
-      width="80px"
-      height="80px"
-      alt="My Personal Skype"
-    />
-    <img
-      src="img/youtubelogo.png"
-      width="80px"
-      height="80px"
-      alt="Best Youtube Experience"
-    />
-  </footer>
-  <script src="js/tota11y.min.js"></script>
 </html>

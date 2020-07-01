@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <header class="page-header">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>Miles Hammock - Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -15,38 +15,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/autostyles.css" />
-    <div class="profile">
-      <img src="IMG/logo.jpg" alt="Logo" class="page-header-item" />
-    </div>
-  </header>
-  <nav class="page-header-item profile">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-        <a
-          href="index.html"
-          role="menuitem"
-          class="navigation-list-item navigation-list-item--active"
-          >Homepage</a
-        >
-      </li>
-      <li role="presentation">
-        <a href="about.html" role="menuitem" class="navigation-list-item"
-          >About Me</a
-        >
-      </li>
-      <li role="presentation">
-        <a href="contact.html" role="menuitem" class="navigation-list-item"
-          >Contact Us</a
-        >
-      </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="navigation-list-item"
-          >Work</a
-        >
-      </li>
-    </ul>
-  </nav>
+  </head>
   <body>
+    <header>
+      <img src="IMG/logo.jpg" alt="Logo" class="profile" />
+      <nav class="page-header-item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list-item navigation-list-item--active"
+              >Homepage</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list-item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list-item"
+              >Contact Us</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list-item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="profile">
       <!-- Add your self portrait here-->
       <img
@@ -66,30 +66,28 @@
     <button type="button">Default Button</button>
     <button class="button_secondary">Secondary Button</button>
     <div>
-      <img src="IMG/background.jpg" class="background-img" />
+      <img src="IMG/background.jpg" class="background-img" alt="" />
     </div>
+    <footer class="page-footer">
+      <p>"You can find me on all of these networks as well"</p>
+      <div class="social-media">
+        <img src="img/gmail-logo.png" class="footer-wh" alt="My Gmail" />
+        <img
+          src="img/skypelogo.png"
+          class="footer-wh"
+          alt="My Personal
+          Skype"
+        />
+        <img
+          src="img/youtubelogo.png"
+          class="footer-wh"
+          alt="Best
+          Youtube Experience"
+        />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+    <!-- Brings glasses in bottom left of screen for testing attributes within browser(good 
+    practice for when testing)-->
   </body>
-  <footer class="page-footer">
-    <p>"You can find me on all of these networks as well"</p>
-    <div class="social-media">
-      <img src="img/gmail-logo.png" width="80px" height="80px" alt="My Gmail" />
-      <img
-        src="img/skypelogo.png"
-        width="80px"
-        height="80px"
-        alt="My Personal
-        Skype"
-      />
-      <img
-        src="img/youtubelogo.png"
-        width="80px"
-        height="80px"
-        alt="Best
-        Youtube Experience"
-      />
-    </div>
-  </footer>
-  <script src="js/tota11y.min.js"></script>
-  <!-- Brings glasses in bottom left of screen for testing attributes within browser(good 
-  practice for when testing)-->
 </html>

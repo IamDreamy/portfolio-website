@@ -364,9 +364,9 @@ copying the same attribute for each individual button.
   animation-duration: 4s;
   /* How long the animation takes to complete entire transition
   animation-name: color-change;
-  /* Specifies the name of the animation(@keyframes) 
+  /* Specifies the name of the animation(@keyframes)
   animation-iteration-count: infinite;
-  /* How many times the animation will repeat 
+  /* How many times the animation will repeat
   animation-direction: alternate;
   /* Specifies the direction of the animation(reverse/regualar)
   animation-timing-function: linear;
@@ -433,6 +433,16 @@ copying the same attribute for each individual button.
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.footer-wh {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-wh40 {
+    width: 40px;
+    height: 40px;
 }
 
 /* extra */
