@@ -205,7 +205,7 @@ button:focus {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /* When making grids, "colums" needed to be specified but "rows" will auto grow*/
     grid-gap: 20px
     /* When browser is being changed then grid-gap will keep it alighned with the page*/
