@@ -207,7 +207,7 @@ button:focus {
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     /* When making grids, "colums" needed to be specified but "rows" will auto grow*/
-    grid-gap: 20px
+    grid-gap: 10px
     /* When browser is being changed then grid-gap will keep it alighned with the page*/
 }
 
@@ -225,7 +225,7 @@ button:focus {
     grid-column: 3 / 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    grid-row: 2 / 3;
     /*Can specify end or start by adding such to end of column or row "grid-column-row" */
 }
 
