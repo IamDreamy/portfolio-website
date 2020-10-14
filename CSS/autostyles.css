@@ -542,3 +542,20 @@ th {
     z-index: -1;
     left: 0;
 }
+
+.hover {
+    visibility: visible;
+    width: 340px;
+    height: 300px;
+}
+
+#grid-item .visi {
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#grid-item:hover .visi {
+    visibility: visible;
+}
